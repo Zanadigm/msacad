@@ -1,0 +1,19 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mombasaa/public_html/
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R downloads $DEPLOYPATH
+    - /bin/cp -R error_pages $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R includes $DEPLOYPATH
+    - /bin/cp -R inter-house-pics $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R pages $DEPLOYPATH
+    - /bin/cp -R school-play-pics $DEPLOYPATH
+    - /bin/cp -R scroll-pics $DEPLOYPATH
+    - /bin/cp -R sports-pics $DEPLOYPATH
+    - /bin/cp -R templates $DEPLOYPATH
+    - /bin/cp -R trips-pics $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH

@@ -1,0 +1,1109 @@
+/* Rules for all media screens */
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5em;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #25383C;
+}
+
+h2,
+h3 {
+    color: #25383C;
+}
+
+.col h2 {
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 0.5;
+    padding-left: 1%;
+    margin: 20px 0px
+}
+
+.col h3 {
+    font-size: 150%;
+    font-weight: bolder;
+    padding: 0;
+    color: #25383C;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-container {
+    width: 100%;
+    margin: 0;
+}
+
+.headingbar {
+    background: #151B54;
+}
+
+.headingbar img {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80%; 
+    height: 100%; 
+    display: block;
+}
+
+.picslidebar {
+    overflow: hidden;
+    background: white;
+}
+
+.banner {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 100%;
+    height: 2.5em;
+    background: #e6002d;
+    text-align: center;
+    font-size: 100%;
+    border-bottom: 2px ridge #c0c1c4;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 2.5em;
+    margin: 0;
+    padding: 0 1% 0 21%;
+}
+
+nav ul ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+    border-right: thin solid #F70D1A;
+}
+
+nav li a {
+    display: block;
+    min-width: 7em;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.5em;
+    color: #fff;
+    background: #e6002d;
+    text-decoration: none;
+}
+
+nav li:hover a {
+    background: #F70D1A;
+    color: #FFFF00;
+}
+
+nav li:hover ul a {
+    background: #e6002d;
+    color: #FFF5EE;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-bottom: thin solid #F70D1A;
+}
+
+nav li:hover ul a:hover {
+    background: #F70D1A;
+    color: #FFD801;
+}
+
+nav li ul {
+    display: none;
+}
+
+nav li ul li {
+    display: block;
+    float: none;
+}
+
+nav li ul li a {
+    width: auto;
+    padding: 0 1em;
+    text-align: left;
+}
+
+nav ul li a:hover+.hidden,
+.hidden:hover {
+    display: block;
+}
+
+.show-menu {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #e6002d;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~#menu {
+    display: block;
+}
+
+.mySlides {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.mySlides.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+#mainpage {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 100%;
+    background: #fff;
+}
+
+#school-info {
+    display: flex;
+    justify-content: center;
+}
+
+#story-date {
+    color: #959595
+}
+
+.paddingbox {
+    width: 80%;
+    padding: 0 6%;
+    margin: auto;
+    font-size: 100%;
+    text-align: justify;
+}
+
+section img,
+.col img {
+    display: block;
+    margin: auto;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+section h2 {
+    font-family: Arial;
+    color: #C0392B;
+}
+
+aside {
+    border: thick solid #151B54;
+    border-radius: 6px;
+}
+
+aside h2 {
+    margin: 0;
+    padding: 2px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #003366;
+}
+
+aside h3 {
+    text-align: left;
+    font-weight: bold;
+    text-indent: 10%;
+    padding: 3px 0;
+    margin: 0 -5px;
+    line-height: 2;
+    background: #151B54;
+    color: #fff;
+}
+
+aside ul {
+    list-style-type: none;
+    text-indent: -15%;
+}
+
+aside a {
+    text-decoration: overline;
+    color: #727374;
+}
+
+aside a:hover {
+    color: #F70D1A;
+    font-weight: bold;
+}
+
+.col {
+    vertical-align: top;
+    padding: 2px;
+}
+
+#school-tour {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../images/Facility.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    color: #fff;
+    overflow: hidden;
+    height: 480px;
+}
+
+#school-tour::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.322);
+    z-index: 0;
+}
+
+#school-tour h2,
+#school-tour p,
+#school-tour a {
+    position: relative;
+    /* Ensures text and buttons are above the overlay */
+    z-index: 1;
+}
+
+#school-tour h2 {
+    margin: 10px 0;
+    font-size: 50px;
+}
+
+#school-tour p {
+    max-width: 600px;
+    margin: 10px 0 20px;
+    font-size: 23px;
+    line-height: 2em;
+}
+
+.play-button {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    clear: both;
+    margin: 0;
+    background: #e6002d;
+    color: #fff;
+    border-top: 4px solid #151B54;
+}
+
+/* Table formats */
+section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section table td {
+    background: #BCC6CC;
+    border: thin solid #FAFAFA;
+}
+
+section table th {
+    background: #98AFC7;
+    border: thin solid #FAFAFA;
+}
+
+footer table {
+    text-align: center;
+    padding: 0;
+}
+
+.enquiries_form{
+    width: 40%;
+}
+
+
+/* Form formats */
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #0087cc;
+    border-radius: 4px;
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    text-align: left;
+}
+
+textarea {
+    border: 1px solid #0087cc;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.captchabar {
+    height: 2em;
+    width: 5em;
+    line-height: 1.2;
+    margin: 1em 0;
+}
+
+.submit_button {
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* General classes */
+
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+.centeralign {
+    text-align: center;
+}
+
+.leftalign {
+    text-align: left;
+}
+
+.justifyalign {
+    text-align: justify;
+}
+
+.list-style-none {
+    list-style-type: none;
+}
+
+.text-deco {
+    text-decoration: overline
+}
+
+.red {
+    color: red;
+}
+
+.roundedcorner-panel {
+    background: #fff;
+    border-radius: 6px;
+    padding: .5em 2%;
+    margin-bottom: 1em;
+}
+
+.dropdownpanel {
+    margin: 0;
+    padding: 30px;
+    background-color: #E5E4E2;
+    font-family: Arial;
+    font-size: 100%;
+}
+
+.moredisplay {
+    display: none;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+a :hover {
+    font-weight: bold;
+}
+
+a.showLink,
+a.hide-in-mobileLink {
+    text-decoration: none;
+    color: #36f;
+    padding-left: 8px;
+    background: transparent url(down.gif) no-repeat left;
+}
+
+a.hide-in-mobileLink {
+    background: transparent url(up.gif) no-repeat left;
+}
+
+a.showLink:hover,
+a.hide-in-mobileLink:hover {
+    color: #0056b3;
+}
+
+.element {
+    display: inline-block;
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.header-logo {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    display: block;
+}
+
+/* General Section Styles */
+
+.content-section {
+    padding: 40px;
+}
+
+.margin-medium{
+    margin: 60px 0;
+}
+
+/* News Section */
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #005bb5;
+}
+
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.big-story {
+    flex: 2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.other-stories {
+    display: flex;
+    flex: 3;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story {
+    border-radius: 8px;
+}
+
+.story-title {
+    font-size: 1rem;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story-title:hover {
+    color: #0073e6;
+}
+
+/* Contact Page*/
+
+.contact-card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card i {
+    font-size: 40px;
+    color: #151B54;
+    margin: 20px;
+}
+
+.contact-card p {
+    font-size: 90%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-map {
+    position: relative;
+    width: 60%;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none
+}
+
+/* @media rule for mobile phones */
+
+@media only screen and (max-width:640px) {
+    h2 {
+        text-align: center;
+        padding-left: 0;
+        margin: 10px 0px 25px 0px;
+    }
+
+    h3 {
+        text-align: left;
+        padding-left: 1%;
+    }
+
+    .hide-in-mobile {
+        display: none;
+    }
+
+    .headingbar {
+        height: 5em;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .header-logo {
+        width: 90%;
+    }
+
+    .picslidebar {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        position: relative;
+        z-index: -1
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+    }
+
+    li {
+        border-bottom: 1px solid white
+    }
+
+    ul li,
+    li a {
+        width: 100%;
+    }
+
+    nav li ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .show-menu {
+        display: block;
+    }
+
+    section,
+    aside {
+        float: none;
+        margin: auto;
+    }
+
+    section {
+        width: 100%;
+        padding: 0.3125em;
+    }
+
+    section .textspecial {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    aside {
+        width: 96%;
+        margin: auto;
+        text-align: justify;
+        padding: 0.3125em;
+        border-radius: 0;
+    }
+
+    #mainpage {
+        width: 90%;
+        margin: auto;
+    }
+
+    #school-info {
+        flex-direction: column;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 0rem
+    }
+
+    .other-stories {
+        flex-direction: column;
+    }
+
+    .enquiries_form{
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+
+    .enquiries_form{
+        width: 100%;
+    }
+
+    .contact-map {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .contact-card{
+        width: 100%;
+    }
+
+    .margin-medium{
+        margin: 20px 0px;
+    }
+    .col {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .paddingbox {
+        width: 90%;
+        font-size: 100%;
+        /* margin-top: 40px; */
+    }
+
+    form {
+        margin-left: 0;
+        font-size: 100%;
+        width: 96%;
+    }
+
+    .content-section h1{
+        line-height: 1.5em;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+        padding: 2px 2px;
+        line-height: 0.25;
+        margin-top: 20px
+    }
+
+    footer .altbar {
+        width: 47%;
+        margin: auto;
+        font-size: 10px;
+    }
+
+    footer table {
+        width: 100%;
+    }
+}
+
+/* @media rule for tablet screens */
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+
+    h2,
+    h3 {
+        text-align: left;
+        padding-left: 3%;
+    }
+
+    .hide-in-tablet {
+        display: none;
+    }
+
+    .group:before,
+    .group:after {
+        content: "";
+        display: table;
+    }
+
+    .group:after {
+        clear: both;
+    }
+
+    .group {
+        clear: both;
+        *zoom: 1;
+    }
+
+    .headingbar {
+        height: 7em;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .picslidebar {
+        width: 100%;
+        height: 27.625em;
+        margin: auto;
+        position: relative;
+        z-index: -1
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+    }
+
+    li {
+        border-bottom: 1px solid white
+    }
+
+    ul li,
+    li a {
+        width: 100%;
+    }
+
+    nav li ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu {
+        clear: both;
+    }
+
+    section {
+        float: none;
+        width: 80%;
+        margin: auto;
+        text-align: justify;
+        padding: 0 0.3125em;
+    }
+
+    aside {
+        float: none;
+        clear: both;
+        width: 80%;
+        margin: 20px auto 30px;
+        text-align: justify;
+        padding: 0 0.3125em;
+
+    }
+
+    #school-info {
+        flex-direction: column;
+        width: 80%;
+        margin: auto
+    }
+
+    aside ul {
+        list-style-type: none;
+        text-indent: 15%;
+    }
+
+    .col {
+        width: 100%;
+        margin: auto;
+        font-size: 1em;
+    }
+
+    .show-menu {
+        display: block;
+    }
+
+    .enquiries_form{
+        width: 100%;
+    }
+
+    .form {
+        width: 80%;
+        margin: auto;
+
+    }
+    
+    .paddingbox{
+        width: 90%;
+    }
+
+    .contact-map{
+        width: 100%;
+    }
+
+    .contact-card{
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 1%;
+        line-height: 0.45;
+        font-size: 55%;
+    }
+
+    footer .altbar {
+        float: left;
+        width: 32%;
+        text-align: left;
+        padding-left: 7px;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+}
+
+/* @media rule for desktops*/
+@media only screen and (min-width: 961px) {
+
+    h2,
+    h3,
+    h4 {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .hide-in-bigscreen {
+        display: none;
+    }
+
+    .group:before,
+    .group:after {
+        content: "";
+        display: table;
+    }
+
+    .group:after {
+        clear: both;
+    }
+
+    .group {
+        clear: both;
+        *zoom: 1;
+    }
+
+    .headingbar {
+        height: 10em;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .picslidebar {
+        height: 576px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    #menu {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        justify-content: center;
+    }
+
+    nav li a {
+        font-size: 95%;
+    }
+
+    #mainpage {
+        width: 90%;
+        padding-left: 1%;
+        padding-top: 40px;
+    }
+
+    section {
+        float: left;
+        width: 60%;
+        margin: 10px 2%;
+        text-align: left;
+        padding: 0.3125em;
+    }
+
+    aside {
+        float: left;
+        width: 30%;
+        margin: 10px 1% 30px 1%;
+        text-align: left;
+    }
+
+    aside h2 {
+        font-size: 125%;
+    }
+
+    .col {
+        float: left;
+        width: 30%;
+        margin: 15px 20px;
+        padding: 0 0%;
+        text-align: justify;
+        font-size: 90%;
+    }
+
+    footer {
+        line-height: .3;
+        padding-left: 10%;
+    }
+
+    footer .altbar {
+        float: left;
+        margin: auto;
+        width: 30%;
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
+/*For extra large screens*/
+@media only screen and (min-width: 1200px) {
+    #menu {
+        display: flex;
+        padding-left: 0;
+        margin-left: auto;
+        justify-content: center;
+    }
+
+    .headingbar{
+        height: 10em;
+        padding: 20px 0;
+    }
+
+    .hide-in-bigscreen {
+        display: none;
+    }
+}
+
+/*For extra xlarge screens*/
+@media only screen and (min-width: 1600px) {
+     .headingbar{
+        height: 10em;
+    } 
+}
+
+/* @media rule for priting */
+@media print {
+
+    header,
+    footer,
+    .aside,
+    #menu {
+        display: none;
+    }
+
+    body {
+        font: 12pt georgia, serif;
+    }
+
+    h1 {
+        font-size: 18pt;
+    }
+
+    h2 {
+        font-size: 16pt;
+        color: #000;
+    }
+}
