@@ -122,7 +122,7 @@
       <div class="col">
         <img src="images/classroom.jpg" alt="Class room photo" width="100%" height="auto" />
         <h3 class="story-title">School Information</h3>
-        <p class="jleftalign">The school follows the British Academic system and implements relevant innovations in teaching techniques, assessment and methodology, as appropriate. Any pupil should be able to transfer directly to any... <br /> <a href="pages/school-information.php"><button class="button">Read More</button></a></p>
+        <p class="jleftalign">The school follows the British Curriculum [Pearson Edexcel] and implements relevant innovations in teaching techniques, assessment and methodology, as appropriate. Any pupil should be able to transfer directly to any... <br /> <a href="pages/school-information.php"><button class="button">Read More</button></a></p>
       </div>
       <div class="col">
         <img src="images/santa1.jpg" alt="headmaset photo" width="100%" height="auto" />
