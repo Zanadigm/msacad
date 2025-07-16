@@ -15,5 +15,8 @@ deployment:
     - /bin/cp -R sports-pics $DEPLOYPATH
     - /bin/cp -R templates $DEPLOYPATH
     - /bin/cp -R trips-pics $DEPLOYPATH
+    - /bin/cp .cpanel.yml $DEPLOYPATH
+    - /bin/cp analyticstracking.php $DEPLOYPATH
+    - /bin/cp googlec5eae29f07071d30.html $DEPLOYPATH
     - /bin/cp index.php $DEPLOYPATH
     - /bin/cp sitemap.xml $DEPLOYPATH
